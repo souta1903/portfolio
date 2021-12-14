@@ -91,7 +91,8 @@ position: relative;
     flex-wrap: wrap;
 }
 body{
-    background-color:#edeae2;
+    /* background-color:#edeae2; */
+    background-color: #C0C0C0;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 .contact-form{
