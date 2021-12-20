@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 #hamburger {
     position: relative;
     display: block;
@@ -55,12 +59,10 @@
     align-items: center;
     height: 100%;
  }
- @media screen and (max-width: 375px) {
-     h2{
-         text-align: center;
-     }
-     body{
-         width: 320px;
+ @media screen and (max-width: 1440px) {
+     .pc-nav{
+         padding-left: 700px;
+         padding-top: 20px;
      }
  }
  .sp-nav li {
@@ -69,7 +71,7 @@
  }
  .sp-nav li span {
     font-size: 15px;
-    color: #fff;
+    color:#fff;
  }
  .sp-nav li a, .sp-nav li span {
     display: block;
@@ -126,7 +128,7 @@
     margin: 0;
     padding: 0;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #e6e6e6;
+    background-color:white;
     letter-spacing : 0.2em;
  }
  header {
@@ -134,7 +136,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: transparent;
+    background-color:#E0DB46;
     display: flex;
     align-items: center;
  }
@@ -169,7 +171,7 @@
     margin: 0;
     font-size: 30px;
     font-weight: normal;
-    color: #fff;
+    color: #444444;
  }
  
  .sp-nav {
@@ -360,3 +362,4 @@ footer{
     padding: top;
     background-color: floralwhite;
 }
+
