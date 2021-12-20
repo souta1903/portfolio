@@ -75,17 +75,32 @@
         </ul>
     </div>
 
-    <div class="contact-form" id="Contact">
-        <h2 class="section-title">Contact</h2>
-            <p>NAME（名前）</p>
-            <input type="text" name="name" id="0" size="35">
-            <p>e-mail（メールアドレス）</p>
-            <input type="email" name="email" id="1" size="35">
-            <p>MESSAGE（メッセージ）</p>
-            <textarea size="35"></textarea>
-            <div class="submit">
-            <input class="contact-submit" type="submit" value="送信">
-    </div>
+    <div class="Form">
+      <h2 class="section-title">Contact</h2>
+      <div class="Form-Item">
+      <p class="Form-Item-Label">
+      <span class="Form-Item-Label-Required">必須</span>会社名
+      </p>
+      <input type="text" class="Form-Item-Input" placeholder="例）">
+      </div>
+      <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+      <input type="text" class="Form-Item-Input" placeholder="例）">
+      </div>
+      <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+      <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+      </div>
+      <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+      <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+      </div>
+      <div class="Form-Item">
+      <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+      <textarea class="Form-Item-Textarea"></textarea>
+      </div>
+      <input type="submit" class="Form-Btn" value="送信する">
+      </div>
 
     <footer id="footer">
         <p>&copy;Portfolio</p>
