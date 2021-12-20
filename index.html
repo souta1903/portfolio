@@ -5,72 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./2.css">
+
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300 rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+           const hum = $('#hamburger, .close')
+           const nav = $('.sp-nav')
+           hum.on('click', function(){
+              nav.toggleClass('toggle');
+           });
+        });
+        </script>
 </head>
 <body>
     <header>
-        <div class="header-left">
-            <h1>依頼用</h1>
+        <h1>
+           <a href="/">RICO NOTES</a>
+        </h1>
+        <nav class="pc-nav">
+           <ul>
+              <li><a href="https://www.instagram.com/temtemporison/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a></li>
+              <li><a href="#About">ABOUT</a></li>
+              <li><a href="#WORKS">WORKS</a></li>
+              <li><a href="#Contact">CONTACT</a></li>
+           </ul>
+        </nav>
+        <nav class="sp-nav">
+           <ul>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="Works">Works</a></li>
+              <li><a href="#Contact">CONTACT</a></li>
+              <li class="close"><span>close</span></li>
+           </ul>
+        </nav>
+        <div id="hamburger">
+           <span></span>
         </div>
+     </header>
+     <div class="main-visual">
+        <h2>DESIGN <span>IS</span> YOUR FUTURE</h2>
+     </div>
 
-        <div class="header-right">
-            <ul class="nav">
-                <li><a href="https://www.instagram.com/temtemporison/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Works">Works</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <main>
-        <div class="main-visual" id="About">
-            <h2 class="section-title">About me</h2>
-        <ul class="content">
+     <div class="section-title" id="About">
+         <h2 class="section-title">About me</h2>
+         <ul class="content">
             <li><img src="./asset/S__49676349.jpg" alt=""></li>
             <li><p class="content2">「感性科学を学んでいる大学四年生（22）です。今は、アイコンなどのイラストを主に描いてますが、これから色んなテイストのイラストを描きたいと思ってます。」</p></li>
         </ul>
-        </div>
+     </div>
 
-        <div class="main-visual" id="Works">
-            <h2 class="section-title">アイコン</h2>
-            <ul class="photo">
-                <li><img src="./asset/依頼写真7.jpg" alt=""></li>
-                <li><img src="./asset/依頼写真2.jpg" alt=""></li>
-                <li><img src="./asset/依頼写真6.jpg" alt=""></li>
-                <li><img src="./asset/依頼写真5.jpg" alt=""></li>
-                <li><img src="./asset/依頼写真3.jpg" alt=""></li>
-                <li><img src="./asset/アイコン写真.jpg" alt=""></li>
-            </ul>
-        </div>
+     <div class="section-title" id="WORKS">
+         <h2 class="section-title">WORKS</h2>
+        <ul class="photo">
+            <li><img src="./asset/依頼写真7.jpg" alt=""></li>
+            <li><img src="./asset/依頼写真2.jpg" alt=""></li>
+            <li><img src="./asset/アイコン写真.jpg" alt=""></li>
+        </ul>
+    </div>
 
-        <div class="main-visual" id="Works">
-            <h2 class="section-title">チラシ用写真</h2>
-            <ul class="photo">
-                <li><img src="./asset/依頼写真1.jpg" alt=""></li>
-                <li><img src="./asset/依頼写真pan.jpg" alt=""></li>
-            </ul>
-        </div>
+    <div class="section-title" >
+        <!-- <h1>チラシ用写真</h1> -->
+        <ul class="photo">
+            <li><img src="./asset/依頼写真1.jpg" alt=""></li>
+            <li><img src="./asset/依頼写真pan.jpg" alt=""></li>
+        </ul>
+    </div>
 
-        <div class="contact-form" id="Contact">
-            <h2 class="section-title">Contact</h2>
-                <p>NAME（名前）</p>
-                <input type="text" name="name" id="0" size="35">
-                <p>e-mail（メールアドレス）</p>
-                <input type="email" name="email" id="1" size="35">
-                <p>MESSAGE（メッセージ）</p>
-                <textarea size="35"></textarea>
-                <div class="submit">
-                <input class="contact-submit" type="submit" value="送信">
-                </div>
-        </div>
-        </section>
-    </main>
+    <div class="contact-form" id="Contact">
+        <h2 class="section-title">Contact</h2>
+            <p>NAME（名前）</p>
+            <input type="text" name="name" id="0" size="35">
+            <p>e-mail（メールアドレス）</p>
+            <input type="email" name="email" id="1" size="35">
+            <p>MESSAGE（メッセージ）</p>
+            <textarea size="35"></textarea>
+            <div class="submit">
+            <input class="contact-submit" type="submit" value="送信">
+    </div>
 
     <footer id="footer">
         <p>&copy;Portfolio</p>
-    </footer>  
+    </footer>
+
 </body>
-</html>
