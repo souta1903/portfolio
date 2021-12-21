@@ -1,4 +1,6 @@
-# portfolio
+# 初めての案件獲得で制作したportfolio
+
+# URL
 https://my-design-portfolio.netlify.app
 
 
