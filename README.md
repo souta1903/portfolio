@@ -9,9 +9,13 @@ https://my-design-portfolio.netlify.app
 
 # 開発環境
 ・開発環境：HTML/ CSS/ JavaScript
+
 ・デプロイ：netlify
+
 ・機能：レスポンシブ対応
+
 ・役割：全工程
+
 ・制作時間：７時間
 
 # こだわった点
