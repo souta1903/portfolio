@@ -134,6 +134,7 @@
  header {
     padding: 30px 4% 10px;
     position: fixed;
+    /* position: relative; */
     top: 0;
     width: 100%;
     background-color:#E0DB46;
@@ -338,15 +339,16 @@
         height: 250px;
         width: 250px;
         margin: 0 0 0 auto;
+        border-radius:50%;
     }
 }
 
 .content > li > img{
     width: 300px;
-    border-radius:10%;
+    border-radius:50%;
 }
 .content2{
-  position: relative;
+  /* position: relative; */
   margin: 2em 0 2em 40px;
   padding: 15px;
   background: #fff0c6;
