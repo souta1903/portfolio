@@ -169,7 +169,7 @@
  }
  @media screen and (max-width: 375px) {
     .main-visual{
-       height: 500px
+       height: 600px
     }
 }
  h2 {
@@ -177,6 +177,7 @@
     font-size: 30px;
     font-weight: normal;
     color: #444444;
+    padding-top: 100px;
  }
  
  .sp-nav {
@@ -308,7 +309,7 @@
     width: 80%;
     margin: 0 auto;
     /* max-width: 600px; */
-    /* display: flex;  */
+    display: flex; 
     /* flex-direction: row; */
     /* justify-content: center; */
     align-items: center;
@@ -323,16 +324,20 @@
         width: 350px;
         padding-right: 40px;
     }
+    .i{
+        padding-left: 35px;
+    }
     .content2:before{display:none}
     .content2:after {display:none}
     .content2{
         text-align: center;
-        margin-top: 30px;
+        padding-top: 100px;
     }
     .content > li > img{
         text-align: center;
         height: 250px;
-        width: 100px;
+        width: 250px;
+        margin: 0 0 0 auto;
     }
 }
 
